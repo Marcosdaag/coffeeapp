@@ -18,6 +18,7 @@ El proyecto está construido utilizando una arquitectura separada (Frontend y Ba
 * **ORM:** Prisma (Modelado de datos y migraciones type-safe).
 * **Autenticación:** JWT (JSON Web Tokens) & Passport.
 * **Documentación:** Swagger / OpenAPI.
+* **Testing:** JEST.
 
 ### Frontend (Cliente)
 * **Framework:** [Angular](https://angular.io/) (Estructura de componentes y servicios).
@@ -43,6 +44,12 @@ El proyecto está construido utilizando una arquitectura separada (Frontend y Ba
 * **Validación de Stock:** Verificación de disponibilidad antes de confirmar la compra.
 * **Cálculo de Envíos:** (En desarrollo) Lógica para calcular costos basados en dirección y peso.
 
+### 🔍 Detalles
+* **Integración de pasarela de pagos:** Stripe/Mercado Pago.
+* **Sistema de notificaciones por email al completar orden.**
+* **Dashboard de administrador con gráficas de ventas.**
+* **Tests unitarios y de integración (Jest).**
+
 ---
 
 ## 📂 Arquitectura del Proyecto
@@ -61,3 +68,8 @@ C -- Lógica --> D[(Prisma / DB)]
 D -- Datos --> C
 C -- Respuesta --> B
 B -- JSON --> A
+```
+
+---
+
+Developed by Marcos Aguirre https://www.linkedin.com/in/marcosaguirre9/
